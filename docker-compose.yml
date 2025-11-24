@@ -1,0 +1,41 @@
+services:
+  api: &main_app
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: market_watch_backend:${MARKET_WATCH_BACKEND_VERSION:-latest}
+    restart: always
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      MARKET_WATCH_BACKEND_HOST: 0.0.0.0
+      MARKET_WATCH_BACKEND_DB_HOST: market_watch_backend-db
+      MARKET_WATCH_BACKEND_DB_PORT: 5432
+      MARKET_WATCH_BACKEND_DB_USER: market_watch_backend
+      MARKET_WATCH_BACKEND_DB_PASS: market_watch_backend
+      MARKET_WATCH_BACKEND_DB_BASE: market_watch_backend
+
+  db:
+    image: postgres:16.3-bullseye
+    hostname: market_watch_backend-db
+    environment:
+      POSTGRES_PASSWORD: "market_watch_backend"
+      POSTGRES_USER: "market_watch_backend"
+      POSTGRES_DB: "market_watch_backend"
+    volumes:
+      - market_watch_backend-db-data:/var/lib/postgresql/data
+    restart: always
+    healthcheck:
+      test: pg_isready -U market_watch_backend
+      interval: 2s
+      timeout: 3s
+      retries: 40
+
+
+
+volumes:
+  market_watch_backend-db-data:
+    name: market_watch_backend-db-data
