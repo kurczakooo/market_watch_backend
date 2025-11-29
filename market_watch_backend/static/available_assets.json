@@ -1,0 +1,63 @@
+{
+    "stocks": [
+        { "ticker": "LMT", "logoUrl": "/static/logos/stocks/lockheed_martin.png" },
+        { "ticker": "AMZN", "logoUrl": "/static/logos/stocks/amazon.png" },
+        { "ticker": "ADS.DE", "logoUrl": "/static/logos/stocks/adidas.png" },
+        { "ticker": "ZAL.DE", "logoUrl": "/static/logos/stocks/zalando.png" },
+        { "ticker": "TSLA", "logoUrl": "/static/logos/stocks/tesla.png" },
+        { "ticker": "META", "logoUrl": "/static/logos/stocks/meta.png" },
+        { "ticker": "PG", "logoUrl": "/static/logos/stocks/p&g.png" },
+        { "ticker": "JPM", "logoUrl": "/static/logos/stocks/jpmorgan_chase.png" },
+        { "ticker": "VOW3.DE", "logoUrl": "/static/logos/stocks/volkswagen.png" },
+        { "ticker": "BMW.DE", "logoUrl": "/static/logos/stocks/bmw.png" },
+        { "ticker": "AAPL", "logoUrl": "/static/logos/stocks/apple.png" },
+        { "ticker": "MSFT", "logoUrl": "/static/logos/stocks/microsoft.png" },
+        { "ticker": "GOOGL", "logoUrl": "/static/logos/stocks/alphabet.png" },
+        { "ticker": "NFLX", "logoUrl": "/static/logos/stocks/netflix.png" },
+        { "ticker": "NVDA", "logoUrl": "/static/logos/stocks/nvidia.png" },
+        { "ticker": "DIS", "logoUrl": "/static/logos/stocks/disney.png" },
+        { "ticker": "BABA", "logoUrl": "/static/logos/stocks/alibaba.png" },
+        { "ticker": "ORCL", "logoUrl": "/static/logos/stocks/oracle.png" },
+        { "ticker": "INTC", "logoUrl": "/static/logos/stocks/intel.png" },
+        { "ticker": "CSCO", "logoUrl": "/static/logos/stocks/cisco.png" },
+        { "ticker": "SAP.DE", "logoUrl": "/static/logos/stocks/sap.png" }
+    ],
+    "etfs": [
+        { "ticker": "SPY", "logoUrl": "/static/logos/etfs/spy.png" },
+        { "ticker": "QQQ", "logoUrl": "/static/logos/etfs/qqq.png" },
+        { "ticker": "EXI", "logoUrl": "/static/logos/etfs/exi2.png" },
+        { "ticker": "DIA", "logoUrl": "/static/logos/etfs/dia.png" },
+        { "ticker": "IWM", "logoUrl": "/static/logos/etfs/iwm.png" },
+        { "ticker": "VTI", "logoUrl": "/static/logos/etfs/vti.png" },
+        { "ticker": "EEM", "logoUrl": "/static/logos/etfs/eem.png" },
+        { "ticker": "VNQ", "logoUrl": "/static/logos/etfs/vnq.png" },
+        { "ticker": "GLD", "logoUrl": "/static/logos/etfs/gld.png" },
+        { "ticker": "SLV", "logoUrl": "/static/logos/etfs/slv.png" }
+    ],
+    "commodities": [
+        { "ticker": "GC=F", "logoUrl": "/static/logos/commodities/gold.png" },
+        { "ticker": "SI=F", "logoUrl": "/static/logos/commodities/silver.png" },
+        { "ticker": "CL=F", "logoUrl": "/static/logos/commodities/oil.png" },
+        { "ticker": "NG=F", "logoUrl": "/static/logos/commodities/natural_gas.png" },
+        { "ticker": "HG=F", "logoUrl": "/static/logos/commodities/copper.png" },
+        { "ticker": "PL=F", "logoUrl": "/static/logos/commodities/platinum.png" },
+        { "ticker": "PA=F", "logoUrl": "/static/logos/commodities/palladium.png" },
+        { "ticker": "ZC=F", "logoUrl": "/static/logos/commodities/corn.png" },
+        { "ticker": "ZW=F", "logoUrl": "/static/logos/commodities/wheat.png" },
+        { "ticker": "ZS=F", "logoUrl": "/static/logos/commodities/soybeans.png" },
+        { "ticker": "KC=F", "logoUrl": "/static/logos/commodities/coffee.png" },
+        { "ticker": "CT=F", "logoUrl": "/static/logos/commodities/cotton.png" },
+        { "ticker": "SB=F", "logoUrl": "/static/logos/commodities/sugar.png" },
+        { "ticker": "CC=F", "logoUrl": "/static/logos/commodities/cocoa.png" }
+    ],
+    "crypto": [
+        { "ticker": "BTC-USD", "logoUrl": "/static/logos/crypto/btc.png" },
+        { "ticker": "ETH-USD", "logoUrl": "/static/logos/crypto/eth.png" },
+        { "ticker": "LTC-USD", "logoUrl": "/static/logos/crypto/ltc.png" },
+        { "ticker": "XRP-USD", "logoUrl": "/static/logos/crypto/xrp.png" },
+        { "ticker": "ADA-USD", "logoUrl": "/static/logos/crypto/ada.png" },
+        { "ticker": "DOGE-USD", "logoUrl": "/static/logos/crypto/doge.png" },
+        { "ticker": "DOT-USD", "logoUrl": "/static/logos/crypto/dot.png" },
+        { "ticker": "SOL-USD", "logoUrl": "/static/logos/crypto/bch.png" }
+    ]
+}

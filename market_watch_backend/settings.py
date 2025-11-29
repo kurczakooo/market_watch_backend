@@ -6,6 +6,9 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 from yarl import URL
 
 TEMP_DIR = Path(gettempdir())
+BASE_DIR: Path = Path(__file__).resolve().parent
+STATIC_DIR: Path = BASE_DIR / "static"
+ASSETS_FILE: Path = STATIC_DIR / "available_assets.json"
 
 
 class LogLevel(str, enum.Enum):

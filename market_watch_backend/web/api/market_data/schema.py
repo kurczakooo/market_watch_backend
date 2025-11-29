@@ -40,3 +40,21 @@ class AssetDataResponse(BaseModel):
 
     details: AssetDataRequest
     data: str  # JSON string representing the DataFrame
+
+
+class AssetBrief(BaseModel):
+    """Asset brief model."""
+
+    ticker: str
+    name: str
+    current_price: float
+    logo_url: str
+
+
+class AllAssetsBriefResponse(BaseModel):
+    """All assets brief response model."""
+
+    stocks: list[AssetBrief]
+    etfs: list[AssetBrief]
+    commodities: list[AssetBrief]
+    crypto: list[AssetBrief]
